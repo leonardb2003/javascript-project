@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.nav-bar{
+    width: 1600px;
+    padding: 0px 100px;
+    position:fixed;
+    line-height: 30px;
+    background-image: linear-gradient(#2343a2,#3d80ed);
+    height: 80px;
+}
+.nav-bar ul{
+    float: right;
+}
+.nav-bar li{
+    display: inline-block;
+    list-style: none;
+}
+.nav-bar li a{
+    font-size: 24px;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+#header{
+    background-image: url(/img/Jordan.jpg);
+    height: 700px;
+    width: 1600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.nav-bar li a :hover{
+    color: rgb(22, 74, 126);
+    transition: all 0.4s ease 0s;
+}
+
