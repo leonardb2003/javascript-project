@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 5px 3px rgba(0,0,0,25%);
+    box-shadow: 10px 10px 3px rgba(35, 35, 35, 0.25);
     flex-direction: column;
     width: 320px;
     text-align: center;
@@ -69,10 +69,11 @@
     background-color: #fff;
     cursor: pointer;
     float: right;
+    height: 500px;
 }
 .images{
     width: 100%;
-    display: flex;
+    display: fixed;
     justify-content: center;
     align-items: center;
 }
@@ -107,8 +108,15 @@
 .description p{
     font-size: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
+.buttons{
+    margin-top: 20px;
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 
 
     
