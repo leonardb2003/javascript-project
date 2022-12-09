@@ -1,120 +1,80 @@
 *{
     margin:0;
-    padding:0;
+    padding: 10px;
     box-sizing: border-box;
+    
 }
-.nav-bar{
-    width: 1600px;
-    padding: 0px 100px;
-    position:fixed;
-    line-height: 30px;
-    background-image: linear-gradient(#2343a2,#3d80ed);
-    height: 80px;
-}
-.nav-bar ul{
-    float: right;
-}
-.nav-bar li{
-    display: inline-block;
-    list-style: none;
-}
-.nav-bar li a{
-    font-size: 24px;
-    padding: 0px 20px;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-}
-#header{
-    background-image: url(/img/Jordan.jpg);
-    height: 700px;
-    width: 1600px;
+
+.background {
+    background-image: url(/img/warren-jones-LFlVuWLjYEo-unsplash.jpg);
+    height: 900px;
+    width: 1500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.nav-bar li a :hover{
-    color: rgb(22, 74, 126);
-    transition: all 0.4s ease 0s;
-}
-.cards{
-    width: 100%;
-    display: inline;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-.cards .new-products{
-    width: 100%;
-    margin-top: 20px;
-}
-.cards .new-products h1{
+ h1{
     text-align: center;
     font-weight: 600;
     font-size: 50px;
     text-transform: uppercase;
     color: #3d80ed;
-    letter-spacing: 1px;
+    letter-spacing: 1px; 
 }
-.card{
+.cards{
     display: flex;
-    align-items: center;
+    flex-flow: row wrap;
     justify-content: center;
+    gap: 25px;
+}
+
+
+  /* .cards{
+    display:flex !important;
+    align-items: center;
+    justify-content: space-evenly ;
     box-shadow: 10px 10px 3px rgba(35, 35, 35, 0.25);
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 320px;
     text-align: center;
     margin: 25px;
     background-color: #fff;
     cursor: pointer;
-    float: right;
     height: 500px;
-}
-.images{
-    width: 100%;
-    display: fixed;
-    justify-content: center;
-    align-items: center;
-}
-.images img{
-    width: 100%;
-    height: 270px;
-}
-.description{
-    margin-top: 20px;
-    text-align: center;
-    padding: 20px;
-}
-.description h1{
-    text-transform: uppercase;
-    font-size: 20px;
-    color: rgb(39, 105, 237);
-    letter-spacing: 2px;
-    margin-top: 7px;  
-}
-.buttons .buy{
-    padding:7px 25px;
-    border-radius: 5px;
-    font-size: 11px;
-    background-color: #1863bf;
-}
-.buttons .checkout{
-    padding: 7px 25px;
-    border-radius: 5px;
-    font-size: 11px;
-    background-color: #1863bf;
-}
-.description p{
-    font-size: 20px;
-    text-align: center;
-    margin-top: 5px;
-}
-.buttons{
+}  */
+ button{
     margin-top: 20px;
     height: 60px;
     text-align: center;
-    text-transform: uppercase;
+}   
+  button.checkout{
+    padding: 2px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #2a6db4;
+    height: 53px;
+    width: 130px;   
+    text-align: center;
+}
+img {
+    width: 310px;
+    height: 400px;
+    display: inline-block;
+    text-align: center;
+}
+h4{
+    color: dodgerblue;
+    font-size: medium;
+}
+h6{
+    font-size: 150px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+table.table {
+    margin-top: 5rem;
 }
 
 
