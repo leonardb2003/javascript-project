@@ -67,10 +67,12 @@ localStorage.setItem('shoes', JSON.stringify([
 ]));
 
 let sneakers = JSON.parse(localStorage.getItem('shoes'));
+
 console.log(sneakers);
 function displaydata(){
+    
+let showSneaker = document.querySelector("#productContainer");
     Object.keys(sneakers).forEach((item) => {
-        let showSneaker = document.querySelector(".cards");
         let y = sneakers[item];
         console.log(sneakers[item]);
         showSneaker.innerHTML +=`

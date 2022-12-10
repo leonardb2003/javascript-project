@@ -1,18 +1,17 @@
-let check = [];
-localStorage.setItem('hereCheckout', JSON.stringify(check))
-let checkout = JSON.parse(localStorage.getItem('hereCheckout'));
-//console.log(checkout);
-let tbody = document.querySelector('tbody')
-console.log(checkout);
+let x = JSON.parse(localStorage.getItem('checkout'));
 
-let hereCheckout = [];
-localStorage.setItem('hereCheckout,', JSON.stringify(check))
-let z = document.querySelector('checkout')
-z.addEventListener("click", myFunction);
+console.log(x);
+let y = document.querySelector('#tableBodyCheck');
 
-function myFunction(){
-    let a = JSON.parse(localStorage.getItem('hereCheckout'));
-    a.push(sneakers(item));
-    console.log(check)
-    localStorage.setItem('hereCheckout', JSON.stringify(hereCheckout));
-}
+x.forEach(element => {
+    y.innerHTML += `
+    <tr>
+        <td>${element.id}</td>
+        <td>${element.Name}</td>
+        <td>${element.img}</td>
+        <td>${element.Price}</td>
+        <td>${element.Size}</td>
+        <td><button class="addTocheckout" onclick="href="#">clear</button></td>
+    </tr>
+    `
+});
