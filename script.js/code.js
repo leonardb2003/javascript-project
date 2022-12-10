@@ -20,13 +20,13 @@ localStorage.setItem('shoes', JSON.stringify([
         "img":"https://i.postimg.cc/QCYYDVqN/img4.jpg",
         "Name":"Air Jordan 4 'Metallic Purple'",
         "Price": "R2500",
-        "Size": "Uk4"
+        "Size": "UK4"
 
     },
     {
         "id": 4,
-        "img":"https://i.postimg.cc/GcjVbpSh/img7.jpg",
-        "Name":"Adidas originals Forum Low Sneakers",
+        "img":"https://i.postimg.cc/Jh72LTfL/img7.jpg",
+        "Name":"Women's New Balance",
         "Price": "R1100",
         "Size": "UK5"
 
@@ -77,13 +77,22 @@ function displaydata(){
             <div class= "card">
                 <img src="${y.img}" alt="image"/>
                 <h4>${y.Name}</h4>
-                <h6>${y.Price}</h6>
-                <button class="checkout">Add to checkout</button>
+                <h6>${y.Size}</h6>
+                <h5>${y.Price}</h5>
+                <button class="checkout" onclick= "addTocheckout (${y.id})">Add to checkout</button>
             </div>
         `
-    
+
     });
 }
 
 displaydata();
+
+let check = JSON.parse(localStorage.getItem ('checkout'));
+
+
+function addTocheckout(id) {
+    check.push(sneakers[id -1])
+    localStorage.setItem('checkout', JSON.stringify(check))
+}
 

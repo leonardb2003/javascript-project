@@ -60,7 +60,7 @@
 }
 img {
     width: 310px;
-    height: 400px;
+    height: 300px;
     display: inline-block;
     text-align: center;
 }
@@ -76,7 +76,19 @@ h6{
 table.table {
     margin-top: 5rem;
 }
-
-
-
+#hello {
+    width: 125px;
+    height: 75px;
+}
+.addTocheckout{
+    border-radius: 5px;
+    color: black;
+    font-weight: 500px;
+    font-size: 19px;
+    width: 82px;
+    height: 50px;
+    margin-top: 2px;
+    background-color: #3d80ed;
+    text-transform: uppercase;
+}
     
